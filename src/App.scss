@@ -19,11 +19,22 @@ body{
       align-items: center;
       justify-content: space-around;
 
-      height: 180px;
+      height: 230px;
 
       border-radius: 10px;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
         0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        p:last-of-type{
+          background-color: rgb(120, 211, 120);
+          border: 1px solid green;
+          border-radius: 50%;
+         
+        }
+        p:first-of-type{
+          font-weight: 900;
+          text-shadow: 2px 2px 3px  rgb(129, 115, 115);
+         
+        }
     }
   }
 }

@@ -9,15 +9,19 @@ import Card from "react-bootstrap/Card";
 const MyAllTheBooks = (proms) => {
   return proms.category.map((book) => {
     return (
-      <Card className="d-inline-block" key={book.asin} style={{ width: "18rem" }}>
-      <Card.Img variant="top" src={book.img} />
-      <Card.Body>
-        <Card.Title>{book.title}</Card.Title>
-        {/* {/* <Card.Text>{book.category}</Card.Text> */}
-        {/* <Card.Price>{book.price}</Card.Price> */}
-        <Button variant="dark fs-5 ">Acquista</Button>
-      </Card.Body>
-    </Card>
+      <Card
+        className="d-inline-block"
+        key={book.asin}
+        style={{ width: "18rem" }}
+      >
+        <Card.Img variant="top" src={book.img} />
+        <Card.Body>
+          <Card.Title className="p-0 m-0">{book.title}</Card.Title>
+          <Card.Text className="p-0 m-0">{book.category}</Card.Text>
+          <Card.Text className="p-1 m-0">{book.price}€</Card.Text>
+          <Button variant="dark fs-5 ">Acquista</Button>
+        </Card.Body>
+      </Card>
     );
   });
 };

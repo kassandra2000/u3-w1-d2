@@ -17,11 +17,11 @@ function App() {
       <MyWelcome variant="secondary my-3 w-25" text="Hello in EpicLibrary" />
       <h1 className="text-center my-5  ">EpicLibrary</h1>
       <div className="card-container">
-        {/* <MyAllTheBooks category={scifi}/>
-        <MyAllTheBooks category={history}/>
-        <MyAllTheBooks category={romance}/>
-        <MyAllTheBooks category={fantasy}/> */}
-        <MyAllTheBooks category={horror}/>
+        <MyAllTheBooks category={scifi} />
+        <MyAllTheBooks category={history} />
+        <MyAllTheBooks category={romance} />
+        <MyAllTheBooks category={fantasy} />
+        <MyAllTheBooks category={horror} />
       </div>
 
       <MyFooter />
